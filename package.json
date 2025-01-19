@@ -1,0 +1,23 @@
+{
+  "name": "refute-jw",
+  "version": "1.0.0",
+  "description": "A website with the arguments to refute Jehovah's witnesses on the fly.",
+  "main": "index.js",
+  "scripts": {
+    "serve": "bundle exec jekyll serve",
+    "build": "bundle exec jekyll build",
+    "install": "bundle install",
+    "upgrade": "bundle update github-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vakho10/refute-jw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vakho10/refute-jw/issues"
+  },
+  "homepage": "https://github.com/vakho10/refute-jw#readme",
+  "dependencies": {}
+}

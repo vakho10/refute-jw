@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{%- assign titles_size = page.title | join: '' | size -%}
+{%- if titles_size > 0 -%}
+<div class="container-fluid bg-body-tertiary shadow-sm text-center p-3 mb-4">
+    <h1 class="m-0 text-center">{{ page.title }}</h1>
+</div>
+{%- endif -%}
+<div class="container">
+    {{ content }}
+</div>

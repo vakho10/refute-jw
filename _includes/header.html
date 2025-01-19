@@ -1,0 +1,50 @@
+<header>
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="{{ '/' | relative_url }}">
+                <i class="fs-2 fa-solid fa-cross me-2" style="text-shadow: 0 0 1rem #ffff00;"></i>
+                Refuting Jehovah's Witnesses
+            </a>
+            {%- if titles_size > 0 -%}
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            8 Points to Challenge
+                        </a>
+                        <ul class="dropdown-menu">
+                            {% assign sorted_posts = site.categories.points | sort: 'order' %}
+                            {% for post in sorted_posts %}
+                            <li>
+                                <a class="dropdown-item" href="{{ post.url | relative_url }}">
+                                    {{ forloop.index }}. {{ post.title }}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {%- for path in page_paths -%}
+                    {%- assign my_page = site.pages | where: "path", path | first -%}
+                    {%- if my_page.title -%}
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{{ my_page.url | relative_url }}">
+                            {{ my_page.title | escape }}
+                        </a>
+                    </li>
+                    {%- endif -%}
+                    {%- endfor -%}
+                </ul>
+            </div>
+            {%- endif -%}
+        </div>
+    </nav>
+</header>

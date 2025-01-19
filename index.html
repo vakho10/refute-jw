@@ -1,0 +1,59 @@
+---
+layout: default
+---
+{%- include jumbotron.html -%}
+{%- include brief-cult-info.html -%}
+
+<div class="container-fluid bg-body-tertiary shadow-sm text-center p-3 mb-4">
+    <h1 class="m-0 text-center">8 Points to Challenge</h1>
+</div>
+<div class="container">
+    <div class="row row-cols-1 row-cols-lg-2 g-3">
+        {% assign sorted_posts = site.categories.points | sort: 'order' %}
+        {% for post in sorted_posts %}
+        <div class="col">
+            <div class="card border-light-subtle bg-transparent p-3 shadow-sm">
+                <div class="card-body p-0">
+                    <h3 class="card-title">{{ forloop.index }}. {{ post.title }}</h3>
+                    {{ post.excerpt }}
+                    <a href="{{ post.url | relative_url }}" class="card-link">
+                        Read more &raquo;
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="container-fluid bg-body-tertiary shadow-sm text-center p-3 my-4">
+    <h1 class="m-0 text-center">Other Posts</h1>
+</div>
+<div class="container">
+    {% for post in site.posts %}
+    {% unless post.categories contains "points" %}
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">{{ post.title }}</h3>
+                    <h6 class="card-title">{{ post.date | date: "%B %d, %Y" }}</h6>
+                    <h6 class="card-title">
+                        Categories:
+                        <div class="d-inline-flex gap-1">
+                            {% for category in post.categories %}
+                            <span class="badge text-bg-secondary">{{ category }}</span>
+                            {% endfor %}
+                        </div>
+                    </h6>
+                    <div class="card-text">{{ post.excerpt }}</div>
+                    <a href="{{ post.url | relative_url }}" class="card-link">
+                        Read more &raquo;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endunless %}
+    {% endfor %}
+</div>
