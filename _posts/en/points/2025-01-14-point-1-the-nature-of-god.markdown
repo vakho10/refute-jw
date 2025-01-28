@@ -1,10 +1,11 @@
 ---
 layout: page
 title: "The Nature of God (Trinity)"
-permalink: "/the-nature-of-god"
 date: 2025-01-14 12:03:32 +0400
 categories: points
 order: 1
+permalink: "/en/the-nature-of-god"
+lang: en
 ---
 
 Jehovah's Witnesses reject the Trinity, teaching that Jehovah is the only God, and Jesus is His created son, not God

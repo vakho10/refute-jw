@@ -1,10 +1,11 @@
 ---
 layout: page
 title: "The Authority of the Watchtower"
-permalink: "/the-authority-of-the-watchtower"
 date: 2025-01-14 12:03:32 +0400
 categories: points
 order: 5
+permalink: "/en/the-authority-of-the-watchtower"
+lang: en
 ---
 
 JWs believe the Watchtower Society is God’s sole channel of communication.

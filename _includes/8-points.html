@@ -1,0 +1,23 @@
+<div class="container-fluid bg-body-tertiary shadow-sm text-center p-3 mb-4">
+    <h1 class="m-0 text-center">
+        {{ site.data[page.lang].header.nav.8-points }}
+    </h1>
+</div>
+<div class="container">
+    <div class="row row-cols-1 row-cols-lg-2 g-3">
+        {% assign sorted_posts = site.categories.points | where: "lang", page.lang | sort: 'order' %}
+        {% for post in sorted_posts %}
+        <div class="col">
+            <div class="card border-light-subtle bg-transparent p-3 shadow-sm">
+                <div class="card-body p-0">
+                    <h3 class="card-title">{{ forloop.index }}. {{ post.title }}</h3>
+                    {{ post.excerpt }}
+                    <a href="{{ post.url | relative_url }}" class="card-link">
+                        {{ site.data[page.lang].read-more }} &raquo;
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

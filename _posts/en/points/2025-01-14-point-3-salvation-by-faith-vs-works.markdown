@@ -1,10 +1,11 @@
 ---
 layout: page
 title: "Salvation by Faith vs. Works"
-permalink: "/salvation-by-faith-vs-works"
 date: 2025-01-14 12:03:32 +0400
 categories: points
 order: 3
+permalink: "/en/salvation-by-faith-vs-works"
+lang: en
 ---
 
 JWs teach that faith alone is insufficient for salvation and emphasize works, such as door-to-door ministry.

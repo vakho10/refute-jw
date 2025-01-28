@@ -1,10 +1,11 @@
 ---
 layout: page
 title: "Blood Transfusions"
-permalink: "/blood-transfusions"
 date: 2025-01-14 12:03:32 +0400
 categories: points
 order: 6
+permalink: "/en/blood-transfusions"
+lang: en
 ---
 
 JWs refuse blood transfusions, citing Acts 15:29 (“abstain from blood”).

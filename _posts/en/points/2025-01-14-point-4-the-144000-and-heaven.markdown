@@ -1,10 +1,11 @@
 ---
 layout: page
 title: "The 144,000 and Heaven"
-permalink: "/the-144000-and-heaven"
 date: 2025-01-14 12:03:32 +0400
 categories: points
 order: 4
+permalink: "/en/the-144000-and-heaven"
+lang: en
 ---
 
 JWs teach that only 144,000 people will go to heaven, based on their interpretation of Revelation 7:4 and 14:1-3.

@@ -3,6 +3,8 @@ layout: page
 title: "The Practice of Lighting Candles"
 date: 2025-01-14 12:03:32 +0400
 categories: [ church, candles, lighting ]
+permalink: "/en/other/practice-of-lighting-candles"
+lang: en
 ---
 
 Jehovah’s Witnesses frequently state that Jesus did not explicitly instruct the practice of lighting of candles,

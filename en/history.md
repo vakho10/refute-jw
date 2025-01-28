@@ -1,7 +1,8 @@
 ---
 layout: page
-title: "History of JW"
-permalink: /history/
+title: History of JW
+permalink: /en/history/
+lang: en
 ---
 The Jehovah’s Witnesses cult traces its origins to the Bible Student movement in the late 19th century. Here’s their chronological history:
 

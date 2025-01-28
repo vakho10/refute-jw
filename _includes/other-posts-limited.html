@@ -1,18 +1,20 @@
----
-layout: page
-title: "Other Posts"
----
+<div class="container-fluid bg-body-tertiary shadow-sm text-center p-3 my-4">
+    <h1 class="m-0 text-center">
+        {{ site.data[page.lang].header.nav.other-posts }}
+    </h1>
+</div>
 <div class="container">
-    {% for post in site.posts %}
-    {% unless post.categories contains "points"%}
+    {% assign filtered_posts = site.posts | where: "lang", page.lang %}
+    {% for post in filtered_posts %}
+    {% unless post.categories contains "points" limit:5 %}
     <div class="row">
-        <div class="col">
+        <div class="col g-3">
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title">{{ post.title }}</h3>
                     <h6 class="card-title">{{ post.date | date: "%B %d, %Y" }}</h6>
                     <h6 class="card-title">
-                        Categories:
+                        {{ site.data[page.lang].categories }}:
                         <div class="d-inline-flex gap-1">
                             {% for category in post.categories %}
                             <span class="badge text-bg-secondary">{{ category }}</span>
@@ -21,7 +23,7 @@ title: "Other Posts"
                     </h6>
                     <div class="card-text">{{ post.excerpt }}</div>
                     <a href="{{ post.url | relative_url }}" class="card-link">
-                        Read more &raquo;
+                        {{ site.data[page.lang].read-more }} &raquo;
                     </a>
                 </div>
             </div>
@@ -29,4 +31,11 @@ title: "Other Posts"
     </div>
     {% endunless %}
     {% endfor %}
+    <div class="row mt-3">
+        <div class="col d-flex justify-content-center">
+            <a href="{{ '/' | append: page.lang | append: '/posts' | relative_url }}" class="btn btn-primary">
+                {{ site.data[page.lang].see-all-posts }} &raquo;
+            </a>
+        </div>
+    </div>
 </div>

@@ -1,10 +1,11 @@
 ---
 layout: page
 title: "The New World Translation (NWT)"
-permalink: "/the-new-world-translation"
 date: 2025-01-14 12:03:32 +0400
 categories: points
 order: 8
+permalink: "/en/the-new-world-translation"
+lang: en
 ---
 
 The NWT contains unique translations that align with JW theology but are inconsistent with standard biblical

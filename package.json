@@ -4,7 +4,7 @@
   "description": "A website with the arguments to refute Jehovah's witnesses on the fly.",
   "main": "index.js",
   "scripts": {
-    "serve": "bundle exec jekyll serve",
+    "serve": "bundle exec jekyll serve --verbose",
     "build": "bundle exec jekyll build",
     "install": "bundle install",
     "upgrade": "bundle update github-pages"

@@ -1,10 +1,11 @@
 ---
 layout: page
 title: "Physical Resurrection of Jesus"
-permalink: "/physical-resurrection-of-jesus"
 date: 2025-01-14 12:03:32 +0400
 categories: points
 order: 7
+permalink: "/en/physical-resurrection-of-jesus"
+lang: en
 ---
 
 JWs teach Jesus was resurrected as a spirit being, not in His physical body.

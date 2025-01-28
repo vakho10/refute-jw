@@ -1,10 +1,11 @@
 ---
 layout: page
 title: "The Deity of Christ"
-permalink: "/the-deity-of-christ"
 date: 2025-01-14 12:03:32 +0400
 categories: points
 order: 2
+permalink: "/en/the-deity-of-christ"
+lang: en
 ---
 
 Jehovah's Witnesses believe Jesus is a created being (Michael the Archangel).

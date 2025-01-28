@@ -1,7 +1,7 @@
 <footer class="footer text-body-secondary bg-dark mt-5 py-3" data-bs-theme="dark">
     <div class="container d-flex justify-content-center align-content-center gap-3">
         <p class="mb-0">
-            &copy; {{ 'now' | date: '%Y' }} | {{ site.title }}
+            &copy; {{ 'now' | date: '%Y' }} | {{ site.data[page.lang].header.title }}
         </p>
         <a href="{{ site.github_url }}" target="_blank"
            title="{{ site.github_url | escape }}">

@@ -9,6 +9,8 @@ github_url: https://github.com/vakho10/refute-jw
 show_excerpts: true
 excerpt_separator: <!--more-->
 
+exclude: [ 'README.md', 'Gemfile.lock', 'Gemfile', 'package.json', 'package-lock.json' ]
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
